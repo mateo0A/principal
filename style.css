@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color-basis);
+}
+/*root*/
+:root{
+    /*colors*/
+    --bck-body:#DDD;
+    --btn-Mode:#FFF;
+    --color-basis:#000;
+    /*transitions*/
+    --body-trn:all .3s ease;
+    --btn-Mode-trn:all .4s ease;
+}
+
+/**/
+body{
+    background: var(--bck-body);
+    transition: var(--body-trn);
+}
+/*__________________________-*/
+/*BTN Dark ang light Mode*/
+/*Light Mode*/
+.mode-lD{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    padding: 23px;
+    background: var(--btn-Mode);
+    border-radius: 50%;
+}
+.icon-mode{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    transition: var(--btn-Mode-trn);
+}
+
+.sun{
+   opacity: 0;
+}
+/*Darkmode mode*/
+body.Modedark{
+    --bck-body:#0c0a0a;
+    --btn-Mode:#3b3838;
+    --color-basis:#fff;
+
+}
+body.Modedark .sun{
+    opacity: 1;
+   
+}
+body.Modedark .moon{
+    opacity: 0;
+   
+}
+
+/*______________*/
