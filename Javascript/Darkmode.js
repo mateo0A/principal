@@ -1,4 +1,6 @@
+
 let darkmode=localStorage.getItem("dark");
+console.log(darkmode);
 
 const eneableMode=()=>{
     document.querySelector("body").classList.add('Modedark')
@@ -13,7 +15,7 @@ const disableMode=()=>{
 let btnM=document.querySelector(".mode-lD")
 
 
-if(darkmode="active") eneableMode()
+if(darkmode==="active") eneableMode()
 btnM.addEventListener("click",()=>{
     darkmode=localStorage.getItem("dark")
 
