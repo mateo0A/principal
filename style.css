@@ -10,6 +10,7 @@
     --bck-body:#DDD;
     --btn-Mode:#FFF;
     --color-basis:#000;
+    --color-text:#1c1c1c;
     /*transitions*/
     --body-trn:all .3s ease;
     --btn-Mode-trn:all .4s ease;
@@ -30,6 +31,12 @@ body{
     padding: 23px;
     background: var(--btn-Mode);
     border-radius: 50%;
+    filter: drop-shadow(0 2px 2px  var(--color-basis));
+
+}
+.mode-lD:active{
+    filter: drop-shadow(0 0px 2px  var(--color-basis));
+
 }
 .icon-mode{
     position: absolute;
@@ -47,6 +54,7 @@ body.Modedark{
     --bck-body:#0c0a0a;
     --btn-Mode:#3b3838;
     --color-basis:#fff;
+    --color-text:#fff;
 
 }
 body.Modedark .sun{
@@ -59,3 +67,66 @@ body.Modedark .moon{
 }
 
 /*______________*/
+/*btn Menu*/
+.btn-menuRes{
+    position: fixed;
+    z-index: 2000;
+    padding: 20px;
+    background: var(--btn-Mode);
+    left: 5px;
+    top :5px; 
+    border-radius: 5px;
+    display: none;
+    filter: drop-shadow(0 1px 1px  var(--color-basis));
+}
+body.Modedark .btn-menuRes{ 
+    filter: drop-shadow(0 0px 2px  #00000000);
+
+}
+.btn-menuRes:active{
+    filter: drop-shadow(0 0px 1px  var(--color-basis));
+
+}
+/*lines btn*/
+.btn-menuRes span{
+    width: 45%;
+    height: 2px; 
+    background: var(--color-text);
+    position: absolute;
+    transform: translateX(-50%);
+    
+}
+.btn-menuRes span:nth-child(1){
+    top: 40%;
+    left: 50%;
+    transition: .3s ease;
+    
+}
+.btn-menuRes span:nth-child(2){
+    top: 50%;
+    left: 50%;
+    transition: .3s ease;
+}
+.btn-menuRes span:nth-child(3){
+    top: 60%;
+    left: 50%;
+    left: 50%;
+    transition: .3s ease;
+    
+}
+/*active*/
+.btn-menuRes.menuActive :nth-child(2){
+    opacity: 0;
+}
+.btn-menuRes.menuActive span:nth-child(1){
+    top: 50%;
+    left: 27%;
+    transform: rotate(45deg);
+}
+.btn-menuRes.menuActive span:nth-child(3){
+    top: 50%;
+    left: 27%;
+
+    transform: rotate(-45deg);
+}
+/*___________________________________*/
