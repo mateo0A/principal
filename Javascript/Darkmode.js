@@ -20,6 +20,6 @@ btnM.addEventListener("click",()=>{
     darkmode=localStorage.getItem("dark")
 
     darkmode !== "active" ? eneableMode():disableMode()
-    console.log(1);
+
     
 })
