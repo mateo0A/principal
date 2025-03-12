@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--color-basis);
+    scroll-behavior: smooth;
 }
 /*root*/
 :root{
@@ -11,6 +12,7 @@
     --btn-Mode:#FFF;
     --color-basis:#000;
     --color-text:#1c1c1c;
+    --color-btns:#e4d8d8d7;
     /*transitions*/
     --body-trn:all .3s ease;
     --btn-Mode-trn:all .4s ease;
@@ -31,7 +33,7 @@ body{
     padding: 23px;
     background: var(--btn-Mode);
     border-radius: 50%;
-    filter: drop-shadow(0 2px 2px  var(--color-basis));
+    filter: drop-shadow(0 2px 1px  var(--color-basis));
 
 }
 .mode-lD:active{

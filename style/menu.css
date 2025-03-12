@@ -1,0 +1,128 @@
+/*Encabezado de la tabla*/
+.log-text{
+    width: 99%;
+    gap: 10px;
+    height: 19vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.log-text img{
+    position: relative;
+    width: 50px;
+    object-fit: contain;
+}
+.titleText{
+    width: 150px;
+    overflow: hidden;
+    transition:all .3s ease-in-out;
+    opacity: 1;
+}
+.titleText.close{
+    width: 0px;
+    opacity: 0;
+}
+/*-----------------------s*/
+/*menu*/
+.nav-list{
+    width: 95%;  
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+.item-lits{
+    display: flex;
+    flex-direction: column;
+}
+.nav-link{
+    width: 100%; 
+    padding: 15px;
+}
+/*sub menu*/
+.item-lits aside{
+    cursor: pointer;
+}
+.show{
+    align-items: end;
+    overflow: hidden;
+    
+}
+.list-inside{
+    border-left: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    width: 95%;
+    height: 0;
+    transition: .4s ease-in-out ;
+}
+.list-inside .link-inside{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+    margin: 5px 0 0 0 ;
+}
+.link-inside:hover {
+    justify-content: space-between;
+}
+.list-inside li{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    
+}
+/*______________________________-----------------*/
+/*----------------*/
+/*Footer*/
+.description-web{
+    background: blue;
+    width: 95%;       
+    min-height: 20vh;
+}
+/*-------------------------*/
+/*principal contedor*/
+.nav{
+    background: var(--btn-Mode);
+    width: 200px;
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: scroll;
+    padding: 3px;
+    gap: 5px; 
+    user-select: none;
+}
+
+.nav::-webkit-scrollbar {
+    background-color:#ffffff00;
+    width: 7px;
+    
+}
+
+.nav::-webkit-scrollbar-thumb {
+    background-color: #eb0f0f00;
+    border-radius: 10px;
+
+}
+.nav:hover::-webkit-scrollbar-thumb{
+    background-color: #eb0f0ff5;
+
+}
+
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    
+}
