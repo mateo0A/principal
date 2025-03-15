@@ -39,8 +39,11 @@
 }
 .nav-link{
     width: 100%; 
-    padding: 15px;
+    padding: 15px; 
+    border: solid 1px #0000001a;
+    border-radius: 10px;
 }
+
 /*sub menu*/
 .item-lits aside{
     cursor: pointer;
@@ -78,6 +81,19 @@
     align-items: end;
     gap: 1rem;
     
+}
+.item-lits--click{
+    position: relative;
+}
+.chevDown{
+    position: absolute;
+    right: 10px; 
+    top: 50%;  
+    transform: translateY(-50%)  ;
+    transition: .3s ease-out; 
+}
+.chevDown.Rot{
+    transform: translateY(-50%) rotate(-90deg);
 }
 /*______________________________-----------------*/
 /*----------------*/
