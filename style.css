@@ -13,6 +13,10 @@
     --color-basis:#000;
     --color-text:#1c1c1c;
     --color-btns:#e4d8d8d7;
+    --border-links:#00000034;
+    --hover-links:#b11818;
+    --text-link-hover:#fff;
+    --sub-links-hover:#777474bb;
     /*transitions*/
     --body-trn:all .3s ease;
     --btn-Mode-trn:all .4s ease;
@@ -57,6 +61,8 @@ body.Modedark{
     --btn-Mode:#3b3838;
     --color-basis:#fff;
     --color-text:#fff;
+    --border-links:#eee6e650;
+    --sub-links-hover:#443f3f93;
 
 }
 body.Modedark .sun{

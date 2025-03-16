@@ -1,8 +1,9 @@
 /*Encabezado de la tabla*/
 .log-text{
-    width: 99%;
+    width: 100%;
     gap: 10px;
-    height: 19vh; 
+    min-height: 19vh; 
+    max-height: 19vh; 
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -40,10 +41,25 @@
 .nav-link{
     width: 100%; 
     padding: 15px; 
-    border: solid 1px #0000001a;
+    border: solid 1px var(--border-links);
     border-radius: 10px;
+    white-space: nowrap;
+}
+.nav-link:hover{
+    background: var(--hover-links);
+    
+}
+.nav-link:hover .text-link{
+    color:var(--text-link-hover);
+
+}
+.nav-link:hover .iconsMenu{
+    color:var(--text-link-hover);
 }
 
+.iconsMenu{
+    font-size: 23px;
+}
 /*sub menu*/
 .item-lits aside{
     cursor: pointer;
@@ -73,6 +89,7 @@
 }
 .link-inside:hover {
     justify-content: space-between;
+    background: var(--sub-links-hover);
 }
 .list-inside li{
     width: 100%;
@@ -88,6 +105,7 @@
 .chevDown{
     position: absolute;
     right: 10px; 
+    font-size: 19px;
     top: 50%;  
     transform: translateY(-50%)  ;
     transition: .3s ease-out; 
@@ -95,6 +113,8 @@
 .chevDown.Rot{
     transform: translateY(-50%) rotate(-90deg);
 }
+/*Iconos especiales*/
+
 /*______________________________-----------------*/
 /*----------------*/
 /*Footer*/
@@ -107,7 +127,7 @@
 /*principal contedor*/
 .nav{
     background: var(--btn-Mode);
-    width: 200px;
+    width: 200px;  
     min-height: 100vh;
     max-height: 100vh;
     display: flex;
@@ -115,7 +135,7 @@
     justify-content: space-evenly;
     align-items: center;
     overflow-y: scroll;
-    padding: 3px;
+    padding:  0 5px 0 5px;
     gap: 5px; 
     user-select: none;
 }
